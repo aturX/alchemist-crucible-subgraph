@@ -15,6 +15,12 @@ graph init --from-contract 0x54e0395cfb4f39bef66dbcd5bd93cca4e9273d56 --network 
 ```
 
 
+```
+$ graph codegen
+
+$ graph build
+```
+
 Subgraph aturx/alchemist-crucible-subgraph created in alchemist-crucible-subgraph
 
 Next steps:
@@ -28,3 +34,15 @@ Next steps:
   3. Run `yarn deploy` to deploy the subgraph to
      https://thegraph.com/explorer/subgraph/aturx/alchemist-crucible-subgraph.
 
+
+# Done 
+
+```
+Build completed: QmYANCSYf5offXq7jaLjB7WCBdnPcigcCVw2u3vMwg5i4K
+
+Deployed to https://thegraph.com/explorer/subgraph/aturx/Alchemist-Crucible
+
+Subgraph endpoints:
+Queries (HTTP):     https://api.thegraph.com/subgraphs/name/aturx/alchemist-crucible      
+Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/aturx/alchemist-crucible 
+```

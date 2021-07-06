@@ -1,13 +1,13 @@
 {
-  "name": "alchemist-crucible-subgraph",
+  "name": "Alchemist-Crucible",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ aturx/alchemist-crucible-subgraph",
-    "create-local": "graph create --node http://localhost:8020/ aturx/alchemist-crucible-subgraph",
-    "remove-local": "graph remove --node http://localhost:8020/ aturx/alchemist-crucible-subgraph",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 aturx/alchemist-crucible-subgraph"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ aturx/Alchemist-Crucible",
+    "create-local": "graph create --node http://localhost:8020/ aturx/Alchemist-Crucible",
+    "remove-local": "graph remove --node http://localhost:8020/ aturx/Alchemist-Crucible",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 aturx/Alchemist-Crucible"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.20.1",
