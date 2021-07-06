@@ -1,0 +1,35 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: AlchemistCrucible
+    network: mainnet
+    source:
+      address: "0x54e0395cfb4f39bef66dbcd5bd93cca4e9273d56"
+      abi: AlchemistCrucible
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Approval
+        - ApprovalForAll
+        - InstanceAdded
+        - InstanceRemoved
+        - Transfer
+      abis:
+        - name: AlchemistCrucible
+          file: ./abis/AlchemistCrucible.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: InstanceAdded(address)
+          handler: handleInstanceAdded
+        - event: InstanceRemoved(address)
+          handler: handleInstanceRemoved
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
