@@ -28,3 +28,19 @@ type Transfer @entity {
   to: Bytes! # address
   tokenId: BigInt! # uint256
 }
+
+
+type Token @entity {
+  id: ID!
+  tokenID: BigInt!
+  contentURI: String!
+  metadataURI: String!
+  creator: User!
+  owner: User!
+}
+
+type User @entity {
+  id: ID!
+  tokens: [Token!]! @derivedFrom(field: "owner")
+  created: [Token!]! @derivedFrom(field: "creator")
+}
