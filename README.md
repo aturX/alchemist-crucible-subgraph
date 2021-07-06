@@ -35,7 +35,7 @@ Next steps:
      https://thegraph.com/explorer/subgraph/aturx/alchemist-crucible-subgraph.
 
 
-# Done 
+## Done 
 
 ```
 Build completed: QmYANCSYf5offXq7jaLjB7WCBdnPcigcCVw2u3vMwg5i4K
@@ -45,4 +45,16 @@ Deployed to https://thegraph.com/explorer/subgraph/aturx/Alchemist-Crucible
 Subgraph endpoints:
 Queries (HTTP):     https://api.thegraph.com/subgraphs/name/aturx/alchemist-crucible      
 Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/aturx/alchemist-crucible 
+```
+
+## Update
+
+```
+Build completed: Qmd1YZBLRfC3gGKNcNN6Y6Gkb7SSA9Jw7AGQgiFH43B8ho
+
+Deployed to https://thegraph.com/explorer/subgraph/aturx/Alchemist-Crucible
+
+Subgraph endpoints:
+Queries (HTTP):     https://api.thegraph.com/subgraphs/name/aturx/alchemist-crucible
+Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/aturx/alchemist-crucible
 ```

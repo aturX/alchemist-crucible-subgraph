@@ -19,8 +19,6 @@ dataSources:
         - InstanceAdded
         - InstanceRemoved
         - Transfer
-        - Token
-        - User
       abis:
         - name: AlchemistCrucible
           file: ./abis/AlchemistCrucible.json
@@ -33,8 +31,4 @@ dataSources:
           handler: handleInstanceAdded
         - event: InstanceRemoved(address)
           handler: handleInstanceRemoved
-        - event: Transfer(indexed address,indexed address,indexed uint256)
-          handler: handleTransfer
-        - event: Transfer(indexed address,indexed address,indexed uint256)
-          handler: handleTransfer
       file: ./src/mapping.ts
